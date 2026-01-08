@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
-import { Spotlight } from '@/components/ui/spotlight'
+// import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
 import {
   MorphingDialog,
@@ -13,8 +13,8 @@ import {
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
-  PROJECTS,
-  WORK_EXPERIENCE,
+  // PROJECTS,
+  // WORK_EXPERIENCE,
   BLOG_POSTS,
   EMAIL,
   SOCIAL_LINKS,
@@ -137,8 +137,32 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            i’m 17 years old and practically today, january 9, 2026, while i’m
+            writing this, i made the biggest decision of my life. i decided to
+            leave high school because i consider it a complete waste of time,
+            and i believe my time can be used to learn and do what will actually
+            make the difference. this is a huge decision, both psychologically
+            and for my family. it can go well, and on december 31, 2026 i’ll
+            thank god for having taken this decision. or it can go wrong, and i
+            could end up being just another failure living on mercy. i’m writing
+            this while my hands are literally shaking. you don’t know what this
+            means to me. since i was very young, i’ve always been here trying to
+            build things, trying to make something work. nothing has worked so
+            far. this is my last shot. either i make it work, or i die trying.
+            after talking with my family, we agreed on this: if i don’t make it
+            work this year, i’ll drop everything, go back, finish high school,
+            and study a career. but i can’t let my life end like that. i can’t
+            give the reason to the people who didn’t believe in me. i need you
+            to know this: i’m going to make it. from today, i have exactly 4
+            months and 6 days before i turn 18. i have a big goal: make $100k
+            before 18, meaning in these 4 months. right now the progress is
+            3.5%, which is $3,500 generated. this will be a time of hibernation,
+            but in the opposite way. i’m not planning to lose this game. you’ll
+            see me win. remember this. my skills are next.js, hono, typescript,
+            postgresql, tailwind. i don’t really like anything, but i enjoy
+            building, doing marketing, talking to customers, talking to top
+            people. i hate failure, but i’m not afraid of it. honestly, i think
+            i’m good for nothing, but in a world of sasukes, i’ll be rock lee.
           </p>
         </div>
       </motion.section>
