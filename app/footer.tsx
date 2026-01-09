@@ -73,7 +73,7 @@ export function Footer() {
         <a href="https://github.com/ibelick/nim" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2024 Yassr </span>
-            <span>Built with Motion-Primitives.</span>
+            <span>Make it or die </span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">
