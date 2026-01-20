@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
+import Script from 'next/script'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -41,6 +42,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://cdn.visitors.now/v.js"
+          data-token="391e333f-c437-4dfb-8cee-2189f47ad84c"
+        />
+      </head>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
