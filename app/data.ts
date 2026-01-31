@@ -34,16 +34,16 @@ export const PROJECTS: Project[] = [
       'A GitHub repository analytics platform.',
     link: 'https://gitstat.dev/',
     image:
-      '/image.png',
-    id: 'project1',
+      '/gitstat.png',
+    id: 'gitstst',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'Call',
+    description: 'An open source video conferencing platfrom',
+    link: 'https://joincall.co',
     image:
-      '/image.png',
-    id: 'project2',
+      '/joincall.png',
+    id: 'joincall',
   },
 ]
 
