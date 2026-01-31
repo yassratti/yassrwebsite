@@ -41,10 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script
+        {/* <Script
           src="https://cdn.visitors.now/v.js"
           data-token="391e333f-c437-4dfb-8cee-2189f47ad84c"
-        />
+        /> */}
       </head>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
