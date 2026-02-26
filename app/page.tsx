@@ -10,14 +10,17 @@ import {
   MorphingDialogClose,
   MorphingDialogContainer,
 } from '@/components/ui/morphing-dialog'
-import Link from 'next/link'
+
 import { AnimatedBackground } from '@/components/ui/animated-background'
+import Link from 'next/link'
+
 import {
   PROJECTS,
-  // WORK_EXPERIENCE,
-  // BLOG_POSTS,
+  EDUCATION,
+  SKILLS,
   EMAIL,
   SOCIAL_LINKS,
+  BLOG_POSTS,
 } from './data'
 
 const VARIANTS_CONTAINER = {
@@ -122,7 +125,7 @@ function MagneticSocialLink({
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-24"
+      className="relative space-y-24"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -133,10 +136,8 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            I’m a 17yo software engineer and entrepreneur focused on building
-            simple, powerful products. I turn raw data into clear insights, ship
-            fast, and iterate even faster. I believe great tools are born from
-            obsession, clarity, and relentless execution.
+            I'm a 17yo software engineer and researcher, I want to contribute to
+            the development of AI & security by building tools that help people.
           </p>
         </div>
       </motion.section>
@@ -145,14 +146,14 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <h3 className="mb-5 text-lg font-medium">Software </h3>
+        <div className="grid grid-cols-1 gap-1">
           {PROJECTS.map((project) => (
-            <div key={project.name} className="space-y-2">
-              <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+            <div key={project.name} className="space-y-1">
+              {/* <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
                 <ProjectImage src={project.image} />
-              </div>
-              <div className="px-1">
+              </div> */}
+              <div className="flex gap-2 px-1">
                 <a
                   className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
                   href={project.link}
@@ -165,6 +166,59 @@ export default function Personal() {
                   {project.description}
                 </p>
               </div>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Education</h3>
+        <div className="grid grid-cols-1 gap-1">
+          {EDUCATION.map((education) => (
+            <div
+              key={education.name}
+              className="flex justify-between space-y-1"
+            >
+              <div className="flex gap-2 px-1">
+                <a
+                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
+                  href={education.link}
+                  target="_blank"
+                >
+                  {education.name}
+                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 transition-all duration-200 group-hover:max-w-full dark:bg-zinc-50"></span>
+                </a>
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {education.degree}
+                </p>
+              </div>
+              <div className="flex gap-2 px-1">
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {education.start} - {education.end}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Skills</h3>
+        <div className="flex flex-wrap gap-5">
+          {SKILLS.map((skill) => (
+            <div key={skill.name} className="flex items-center gap-1 px-1">
+              <p className="text-base text-zinc-600 dark:text-zinc-400">
+                {skill.icon}
+              </p>
+              <p className="font-base group relative inline-block font-[450] text-zinc-600 dark:text-zinc-400">
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>
