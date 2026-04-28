@@ -136,7 +136,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            I'm a 17yo software engineer and researcher, I want to contribute to
+            I'm a 18yo software engineer and researcher, I want to contribute to
             the development of AI & security by building tools that help people.
           </p>
         </div>
@@ -262,11 +262,11 @@ export default function Personal() {
         </div>
       </motion.section> */}
 
-      {/* <motion.section
+      <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <h3 className="mb-3 text-lg font-medium">Research</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -296,7 +296,7 @@ export default function Personal() {
             ))}
           </AnimatedBackground>
         </div>
-      </motion.section> */}
+      </motion.section>
 
       <motion.section
         variants={VARIANTS_SECTION}
