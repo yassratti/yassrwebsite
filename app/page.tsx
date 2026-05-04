@@ -149,7 +149,7 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Software </h3>
         <div className="grid grid-cols-1 gap-1">
           {PROJECTS.map((project) => (
-            <div key={project.name} className="space-y-1">
+            <div key={project.name} className="flex justify-between space-y-1">
               {/* <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
                 <ProjectImage src={project.image} />
               </div> */}
@@ -164,6 +164,11 @@ export default function Personal() {
                 </a>
                 <p className="text-base text-zinc-600 dark:text-zinc-400">
                   {project.description}
+                </p>
+              </div>
+              <div className="flex gap-2 px-1">
+                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                  {project.year}
                 </p>
               </div>
             </div>

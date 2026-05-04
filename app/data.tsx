@@ -17,6 +17,7 @@ type Project = {
   link: string
   image: string
   id: string
+  year: number
 }
 
 type WorkExperience = {
@@ -56,18 +57,12 @@ type Skill = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'GitStat',
-    description: 'A GitHub repository analytics platform.',
-    link: 'https://gitstat.dev/',
-    image: '/gitstat.png',
-    id: 'gitstst',
-  },
-  {
-    name: 'Call',
-    description: 'An open source video conferencing platfrom',
-    link: 'https://github.com/joincalldotco/Call',
-    image: '/joincall.png',
-    id: 'joincall',
+    name: 'SwaperFarm',
+    description: 'Face swap videos with AI in seconds',
+    link: 'https://swaperfarm.com',
+    image: '/swaperfarm.png',
+    id: 'swaperfarm',
+    year: 2026,
   },
   {
     name: 'RunClaw',
@@ -76,13 +71,72 @@ export const PROJECTS: Project[] = [
     link: 'https://runclaw.sh',
     image: '/runclaw.png',
     id: 'runclaw',
+    year: 2026,
   },
   {
-    name: 'SwaperFarm',
-    description: 'Face swap videos with AI in seconds',
-    link: 'https://swaperfarm.com',
-    image: '/swaperfarm.png',
-    id: 'swaperfarm',
+    name: 'GitStat',
+    description: 'A GitHub repository analytics platform.',
+    link: 'https://gitstat.dev/',
+    image: '/gitstat.png',
+    id: 'gitstst',
+    year: 2026,
+  },
+  {
+    name: 'DropEbook',
+    description: 'a cms that allows users to create and sell ebooks',
+    link: '',
+    image: '',
+    id: 'dropEbook',
+    year: 2025,
+  },
+  {
+    name: 'Call',
+    description: 'An open source video conferencing platfrom',
+    link: 'https://github.com/joincalldotco/Call',
+    image: '/joincall.png',
+    id: 'joincall',
+    year: 2025,
+  },
+  {
+    name: 'SnapMail',
+    description: 'a simple email capture widget',
+    link: 'https://www.youtube.com/watch?v=yOn2eTdZ62g',
+    image: '/snapmail.png',
+    id: 'snapmail',
+    year: 2024,
+  },
+  {
+    name: 'crafy link',
+    description: 'a better link in bio for amazon affiliates',
+    link: '',
+    image: '',
+    id: 'crafylink',
+    year: 2024,
+  },
+  {
+    name: 'Philovers',
+    description:
+      'a platform to watch movies with friends and get mood-based recommendations',
+    link: '',
+    image: '',
+    id: 'philovers',
+    year: 2023,
+  },
+  {
+    name: 'Studster',
+    description: 'a tool to help high school students with their studies',
+    link: '',
+    image: '',
+    id: 'studster',
+    year: 2023,
+  },
+  {
+    name: 'fastracerc',
+    description: 'ecommerce dropshipping store where i was selling car stuff',
+    link: '',
+    image: '',
+    id: 'fastracerc',
+    year: 2022,
   },
 ]
 
