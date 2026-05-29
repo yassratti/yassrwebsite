@@ -189,6 +189,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'LinkedIn',
     link: 'https://www.linkedin.com/in/yassr-atti-a14204369/',
   },
+  {
+    label: 'book a chat',
+    link: 'https://cal.com/yassr',
+  },
 ]
 
 export const EDUCATION: Education[] = [
